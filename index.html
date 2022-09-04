@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>JS For Beginners</title>
+    <link rel="stylesheet" href="style.css">
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+    
+    
+    <!-- <script type="text/javascript" async
+      src="https://example.com/mathjax/MathJax.js?config=TeX-AMS_CHTML">
+    </script> -->
+  
+  </head>
+  <body>
+    <header>
+      <h1 id="title-text">JS For Beginners</h1>
+    </header>
+
+    <section class="container">
+      
+
+      <form id="frequency-form">
+        <h1>$\alpha \sin\left(\frac{2\pi  t}{T}\right)$</h1>
+        <!-- <div class="msg"></div> -->
+        <div>
+          <label for="frequency">$\omega$:</label>
+          <input type="text" id="frequency" value="1.0">
+        </div>
+        <div>
+          <label for="amplitude">$\alpha$</label>
+          <input type="text" id="amplitude" value="1.0">
+        </div>
+        <input class="btn2" type="submit" value="plot">
+      </form>
+      
+      <ul id="users"></ul>x
+
+    
+    </section> 
+    <script type="module">
+      import { LaTeXJSComponent } from "https://cdn.jsdelivr.net/npm/latex.js/dist/latex.mjs"
+      customElements.define("latex-js", LaTeXJSComponent)
+    </script>
+  
+    <style>
+      
+      
+    </style>
+
+
+    <div id='myDiv' ></div>
+<script>
+  var Module = {
+    onRuntimeInitialized: function() {
+        int_sqrt=Module.cwrap('int_sqrt','number',['number'])
+        sum_num=Module.cwrap('sum_num','number',['number'])
+        hk_sin=Module.cwrap('hk_sin','number',['number'])
+        hk_int_sin=Module.cwrap('hk_int_sin','number',['number','number'])
+        console.log(int_sqrt(4))
+        console.log("The sqrt of 100 is",int_sqrt(100))
+    },};
+  </script>
+    <script src="https://cdn.jsdelivr.net/gh/nicolaspanel/numjs@0.15.1/dist/numjs.min.js"></script>
+    <script src='//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML'></script>
+    <script src='https://cdn.plot.ly/plotly-2.14.0.min.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.1.0/math.js" integrity="sha512-I3BR04+2bI75SNyY+c6cJWCUuseVbX1Zn952KS2Lw6+VKuZSA4tXkX5Py+T8N2I9SMT2+iQkE6eSISbhNxBMmw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./js/basicFormValidation2.js"></script>
+    <!-- <script src="./dist/index.browser.js"></script> -->
+    
+    <!-- <script src="./js/testing.js"></script> -->
+    <script async type="text/javascript" src="function.js"></script>
+    <!-- <script  type="text/javascript" src="test.js"></script> -->
+ 
+  </body>
+</html>
